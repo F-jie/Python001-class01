@@ -31,7 +31,6 @@ res.encoding = 'utf-8'
 
 # parser the html data of target website
 ans = []
-print(res.text)
 res_info = Bs(res.text, 'html.parser')
 for tags in res_info.find_all('div', attrs={'class': 'movie-hover-info'}):
     my_dict = {}
